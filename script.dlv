@@ -1,0 +1,7 @@
+b setdelegate internal/global/meter.go:47
+cond setdelegate meter.name == "github.com/signalfx/splunk-otel-go/instrumentation/database/sql/splunksql"
+
+b inner global/meter.go:138
+cond inner m.name == "github.com/signalfx/splunk-otel-go/instrumentation/database/sql/splunksql"
+
+b bug global/meter.go:487
